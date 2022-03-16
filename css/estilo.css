@@ -3,52 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-#grilla{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "contenido"
-    "footer";
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 130px auto 60px;
-}
-header{
-    grid-area: header;
-}
-
-
-
-.headerStyles{
-    /* max-width: 1200px; */
-    position: relative;
-    background-color: #3d61ff8a;
-}
-
-.header__menu{
-    height: 130px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.headerStyles img {
-    width: 10rem;
-}
-
-nav{
-    margin-right: 20px;
-}
-
-.btn-open-sidebar{
-    display: none;
-}
-.btn-close-sidebar{
-    display: none;
-}
-
 body{
     background-image: url("../assets/img/background-img.webp");
     background-attachment: fixed;
@@ -56,67 +10,83 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    position: relative;
 }
-
-ul{
-    display: flex;
-    margin-bottom: 0;
-    gap: 2rem;
-    list-style: none;
+header{
+    margin-bottom: 100px;
 }
-
-a{
-    font-size: large;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-
-}
-a:hover{
-    color: red;
-}
-
-main{
-    grid-area: contenido;
-    margin-bottom: 70px;
-}
-
-.videoMuestra{
-    display: flex;
-    margin: 70px 0;
-    
-}
-video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-footer{
-    grid-area: footer;
-    display: flex;
-    width: 100%;
-    height: 60px;
-    bottom: 0px;
+.navheader{
     background-color: #3d61ff8a;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.menu{
+    display: flex;
     align-items: center;
     justify-content: end;
 }
+.navheader ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+.navheader ul .nav-link {
+    color: antiquewhite;
+}
+.navheader ul .nav-link:hover{
+    color: red;
+}
 
-.redes{
-    margin: 10px 15px;
+.video{
+    margin-bottom: 100px;
+}
+
+footer{
+    height: 60px;
+    background-color: #3d61ff8a;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+footer ul {
+    display: flex;
+    padding-right: 10px;
+    justify-content: end;
+    gap:1rem;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.redes a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.redes a:hover{
+    color:red;
+}
+.sidebarMobile{
+    display: none;
+}
+#offcanvasNavbar{
+    background-color: rgb(148, 155, 155);
+    color: antiquewhite;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: antiquewhite;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #000000;
 }
 
 h1{
-    margin: 20px;
+    margin: 0 20px 30px 20px;
     display: flex;
     justify-content: center;
     color: #ffffff;
     text-decoration: underline;
-    font-size: 36px;
-    font-family: 'Roboto', sans-serif;
-
+    font-size: 40px;
 }
 
 .tablas{
@@ -171,32 +141,29 @@ h1{
 p{
     font-family: 'Comic Neue', cursive;
     width: 80%;
+    padding: 10px;
     font-size: 20px;
     background-color: #ffffffb0;
     margin-bottom: 50px;
 }
+
 .imagenHistoria{
     float:left;
     margin: 5px;
 }
 
-.kriptonita div img{
-    padding: 5px;
-    margin: 3px;
-}
-
-.column{
-    display: flex;
-}
-
 .kriptonita{
-
+    display: flex;
     align-items: center;
+    padding: 5px;
     background-color: #8f0404;
     color: white;
     margin: 10px;
     font-family: 'Comic Neue', cursive;
     font-size: 15px;
+}
+.kriptonita span{
+    padding-left: 10px;
 }
 
 .contacto_formulario{
@@ -276,97 +243,30 @@ textarea{
 
 /* mobile */
 @media screen and (max-width: 600px){
-
-    /* Inicio de sidebar */
-    .header__menu{
-        height: 80px;
-        flex-direction: row-reverse;
+    .sidebarMobile{
+        display: block;
     }
-    .headerStyles img{
+    .navheader{
         display: none;
     }
-
-    .btn-open-sidebar{
-        display: inline-block;
-        background-color: #807e7e;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        margin-left: 20px;
-    }
-
-    .btn-close-sidebar{
+    .main-corto{
+        height: 70vh;
         display: flex;
-        flex-direction: row-reverse;
-        margin: 1rem;
-    }
-
-    #sidebar:target{
-        transform: translateX(0);
-    }
-    .navbar__lista{
-        height: 100vh;
-        width: 250px;
-        position: fixed;
-        flex-direction: column;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
-        background-color: #807e7e;
-        overflow-x: hidden;
-        transition: transform 0.5s;
-        z-index: 100;
-        
-    }
-
-    .navbar ul{
-        gap: 0;
-        padding-left: 0;
-    }
-
-    .navbar li{
-        display: flex;
-        height: 50px;
         align-items: center;
-        padding: 1rem;
-
     }
 
-    .navbar li:hover{
-        background-color: #3d61ff;
+    .tabla1 > *{
+        line-height: 40px;  
     }
+    
+    .tabla2 > *{
 
-    .navbar ul li a:hover{
-        color: black;
+        line-height: 40px;  
     }
-    /* Fin de sidebar */
-
-    #grilla{
-        display: block;
-        grid-template-rows: 250px auto 60px;
-    }
-    main{
-    height: 150vh;
-    }
-
     .imagenHistoria{
         display: none;
     }
 
-    .main__largo{
-        height: fit-content;
-    }
-
-    .main__corto{
-        height: 100vh;
-    }
-
-    .column{
-        flex-direction: column;
-    }
-    .kriptonita{
-        background-color: #3d61ff;
-    }
-    
     .contacto_formulario{
         width: auto;
         padding-right: 10px;
@@ -380,7 +280,7 @@ textarea{
     .button__contacto{
         width: -webkit-fill-available;
     }
-    
+
     body{
         background-image: url("../assets/img/black-superman.jpg");
         background-attachment: fixed;
@@ -389,8 +289,5 @@ textarea{
         background-size: cover;
         height: 100%;
     }
+}
 
-}
-@media screen and (max-width: 1024px){
-    
-}
