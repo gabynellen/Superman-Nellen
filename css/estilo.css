@@ -12,35 +12,13 @@ body{
     height: 100%;
     position: relative;
 }
-header{
-    margin-bottom: 100px;
-}
-.navheader{
-    background-color: #3d61ff8a;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-}
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-.navheader ul {
-    display: flex;
-    list-style: none;
-    margin-bottom: 0;
-}
-.navheader ul .nav-link {
-    color: antiquewhite;
-}
-.navheader ul .nav-link:hover{
-    color: red;
+
+.container{
+    padding-top: 7rem;
 }
 
 .video{
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 
 footer{
@@ -66,9 +44,7 @@ footer ul {
 .redes a:hover{
     color:red;
 }
-.sidebarMobile{
-    display: none;
-}
+
 #offcanvasNavbar{
     background-color: rgb(148, 155, 155);
     color: antiquewhite;
@@ -138,7 +114,7 @@ h1{
     
 }
 
-p{
+.texto p{
     font-family: 'Comic Neue', cursive;
     width: 80%;
     padding: 10px;
@@ -152,18 +128,15 @@ p{
     margin: 5px;
 }
 
-.kriptonita{
-    display: flex;
-    align-items: center;
+.card{
     padding: 5px;
-    background-color: #8f0404;
-    color: white;
     margin: 10px;
-    font-family: 'Comic Neue', cursive;
     font-size: 15px;
 }
-.kriptonita span{
-    padding-left: 10px;
+
+.card img{
+    width: auto;
+    height: 250px;
 }
 
 .contacto_formulario{
@@ -243,12 +216,7 @@ textarea{
 
 /* mobile */
 @media screen and (max-width: 600px){
-    .sidebarMobile{
-        display: block;
-    }
-    .navheader{
-        display: none;
-    }
+
     .main-corto{
         height: 70vh;
         display: flex;
@@ -289,5 +257,8 @@ textarea{
         background-size: cover;
         height: 100%;
     }
+}
+@media screen and (max-width: 768px){
+
 }
 
