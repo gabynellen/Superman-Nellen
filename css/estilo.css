@@ -21,6 +21,7 @@ body{
     margin: 100px 0;
 }
 
+/* Inicio Footer */
 footer{
     height: 60px;
     background-color: #3d61ff8a;
@@ -45,16 +46,26 @@ footer ul {
     color:red;
 }
 
+/* Fin Footer */
+
+
+/* Inicio Navbar */
+
 #offcanvasNavbar{
     background-color: rgb(148, 155, 155);
     color: antiquewhite;
 }
 .navbar-light .navbar-nav .nav-link{
     color: antiquewhite;
+    font-size: 20px;
 }
 .navbar-light .navbar-nav .nav-link:hover{
-    color: #000000;
+    color: #fa0a0a;
 }
+
+/* Fin Navbar */
+
+
 
 h1{
     margin: 0 20px 30px 20px;
@@ -65,47 +76,38 @@ h1{
     font-size: 40px;
 }
 
-.tablas{
-    margin: 0 20px;
-    font-family: 'Comic Neue', cursive;
-    font-size: x-large;
-    
+.celdas{
+    color: #0051ff;
+    font-weight: bold;
+    background-color: #fbfbfb83;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 2px
 }
 
-.tabla1{
-    display: grid;
+.tabla1 .col-lg-6{
     background-image: url("../assets/img/doomsday.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 100px);    
 }
 
-
-.tabla2{
-    display: grid;
+.tabla2 .col-lg-6{
     background-image: url("../assets/img/Lex.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 100px);
 }
 
-.tabla1 > *{
-    background-color: #ffffff6c;
-    border: 2px solid black;
-    text-align: center;
-    line-height: 100px;  
+.tabla1 .row{
+    justify-content: center;
 }
-
-.tabla2 > *{
-    background-color: #ffffff6c;
-    border: 2px solid black;
-    text-align: center;
-    line-height: 100px;  
+.tabla2 .row{
+    justify-content: center;
 }
 
 .texto{
@@ -132,6 +134,13 @@ h1{
     padding: 5px;
     margin: 10px;
     font-size: 15px;
+    background-color: #f34e4e;
+}
+
+.card:hover{
+    width: 410px;
+    height: 450px;
+    background-color: #0051ff;
 }
 
 .card img{
@@ -223,14 +232,26 @@ textarea{
         align-items: center;
     }
 
-    .tabla1 > *{
-        line-height: 40px;  
+    .navbar-light .navbar-nav .nav-link{
+        color: antiquewhite;
+        font-size: 14px;
     }
-    
-    .tabla2 > *{
 
-        line-height: 40px;  
+    .card{
+        background-color: #3d61ff;
     }
+
+    .celdas{
+        color: #0051ff;
+        font-weight: bold;
+        background-color: #fbfbfb83;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #f34e4e ;
+        padding: 10px 0;
+    }
+
     .imagenHistoria{
         display: none;
     }
