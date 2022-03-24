@@ -1,0 +1,17 @@
+
+
+/* Inicio Navbar */
+
+#offcanvasNavbar{
+    background-color: rgb(148, 155, 155);
+    color: antiquewhite;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: antiquewhite;
+    font-size: 20px;
+    &:hover{
+        color: #fa0a0a;
+    }
+}
+
+/* Fin Navbar */

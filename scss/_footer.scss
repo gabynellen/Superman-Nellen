@@ -1,0 +1,27 @@
+/* Inicio Footer */
+footer{
+    height: 60px;
+    background-color: #3d61ff8a;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    ul {
+        display: flex;
+        padding-right: 10px;
+        justify-content: end;
+        gap:1rem;
+        list-style: none;
+        margin-bottom: 0;
+    }
+}
+
+
+.redes a{
+    text-decoration: none;
+    color: antiquewhite;
+    &:hover{
+        color:red;
+    }
+}
+
+/* Fin Footer */

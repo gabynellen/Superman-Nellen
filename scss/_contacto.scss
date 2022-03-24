@@ -1,0 +1,74 @@
+.contacto_formulario{
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #3d61ff; 
+    padding-left: 30px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    color:aliceblue;
+}
+input{
+    width: 30px;
+    height: 20px;
+}
+.radioInput{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.inputRecta{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border: solid 2px #f34e4e; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+.button__contacto{
+    height: 45px; 
+  padding: 0 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px; 
+  background-color: #f34e4e;  
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+label, span{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+}
+
+textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;  
+    border: solid 2px #f34e4e; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}

@@ -1,0 +1,63 @@
+/* mobile */
+@media screen and (max-width: 600px){
+
+    .main-corto{
+        display: flex;
+        align-items: center;
+    }
+
+    .intro__img{
+        width: inherit;
+        height: inherit;
+    }
+
+    .intro__leyend{
+        color: #ffffff;
+    }
+
+    .video{
+        margin: 0 0 100px 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        color: antiquewhite;
+        font-size: 14px;
+    }
+    .d-block{
+        height: 25vh;
+    }
+
+    .card{
+        background-color: #3d61ff;
+    }
+
+    .imagenHistoria{
+        display: none;
+    }
+
+    .contacto_formulario{
+        width: auto;
+        padding-right: 10px;
+    }
+    .inputRecta{
+        width: -webkit-fill-available;
+    }
+    .texto_mensaje{
+        width: -webkit-fill-available;
+    }
+    .button__contacto{
+        width: -webkit-fill-available;
+    }
+
+    body{
+        background-image: url("../assets/img/black-superman.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+
+}
