@@ -33,13 +33,13 @@ h1 {
   color: antiquewhite;
   font-size: 20px; }
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #fa0a0a; }
+    color: #f34e4e; }
 
 /* Fin Navbar */
 /* Inicio Footer */
 footer {
   height: 60px;
-  background-color: #3d61ff8a;
+  background-color: #3d61ff;
   display: flex;
   justify-content: end;
   align-items: center; }
@@ -55,7 +55,7 @@ footer {
   text-decoration: none;
   color: antiquewhite; }
   .redes a:hover {
-    color: red; }
+    color: #f34e4e; }
 
 /* Fin Footer */
 .video {
@@ -74,19 +74,20 @@ footer {
 .intro__column {
   margin-bottom: 30px;
   border-radius: 3px;
-  background-color: #cccccc8e; }
-  .intro__column .intro__leyend {
-    font-family: 'Comic Neue', cursive;
+  background-color: #fbfbfbb7; }
+  .intro__column__leyend {
+    font-family: "Comic Neue", cursive;
     font-weight: 900;
     color: #3d3d3d; }
 
 .villano {
   background-color: #fbfbfbb7;
   font-weight: bold;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Comic Neue", cursive;
+  color: #3d3d3d;
   padding: 1rem;
   border-radius: 3px; }
-  .villano .villano__imagen {
+  .villano__imagen {
     width: 150px;
     height: 150px; }
 
@@ -94,11 +95,12 @@ footer {
   display: flex;
   justify-content: center; }
   .texto p {
-    font-family: 'Comic Neue', cursive;
+    font-family: "Comic Neue", cursive;
+    color: #3d3d3d;
     width: 80%;
     padding: 10px;
     font-size: 20px;
-    background-color: #ffffffb0;
+    background-color: #fbfbfbb7;
     margin-bottom: 50px; }
 
 .imagenHistoria {
@@ -110,16 +112,14 @@ footer {
   margin: 10px;
   font-size: 15px;
   height: 100%;
-  color: #fbfbfb;
+  color: antiquewhite;
   background-color: #f34e4e;
-  font-family: 'Comic Neue', cursive; }
-
-.card:hover {
-  background-color: #0051ff; }
-
-.card img {
-  width: auto;
-  height: 250px; }
+  font-family: "Comic Neue", cursive; }
+  .card:hover {
+    background-color: #3d61ff; }
+  .card img {
+    width: auto;
+    height: 250px; }
 
 .contacto_formulario {
   width: 460px;
@@ -138,7 +138,7 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 25px;
-  color: aliceblue; }
+  color: antiquewhite; }
 
 input {
   width: 30px;
@@ -150,7 +150,7 @@ input {
   margin: 15px 0px; }
 
 .inputRecta {
-  background-color: #fbfbfb;
+  background-color: antiquewhite;
   width: 408px;
   height: 40px;
   border-radius: 5px;
@@ -174,10 +174,10 @@ label, span {
   font-family: 'Roboto';
   font-weight: bold;
   font-size: 17px;
-  color: white; }
+  color: antiquewhite; }
 
 textarea {
-  background-color: #fbfbfb;
+  background-color: antiquewhite;
   width: 405px;
   height: 150px;
   font-family: 'Roboto', sans-serif;
@@ -199,10 +199,10 @@ textarea {
     width: inherit;
     height: inherit; }
   .intro__leyend {
-    color: #ffffff; }
+    color: antiquewhite; }
   .video {
     margin: 0 0 100px 0; }
-  .navbar-light .navbar-nav .nav-link {
+  .navbar-light .navbar-nav .nav-link .navbar-nav .nav-link {
     color: antiquewhite;
     font-size: 14px; }
   .d-block {

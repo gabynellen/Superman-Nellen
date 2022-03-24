@@ -1,0 +1,31 @@
+.video{
+    margin: 100px 0;
+}
+
+/* imagenes carrusel */
+.d-block{
+    height: 75vh;
+}
+
+/* Fin imagenes carrusel */
+
+.intro{
+    &__img{
+        width: 550px;
+        height: 500px;
+        border-radius: 5px;
+    }
+    &__column{
+        margin-bottom: 30px;
+        border-radius: 3px;
+        background-color: $color-fondo-texto;
+        &__leyend{
+            font-family: $font-comic;
+            font-weight: 900;
+            color: $color-parrafos;
+        }
+    }
+
+}
+
+

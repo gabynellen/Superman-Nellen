@@ -3,16 +3,14 @@
     margin: 10px;
     font-size: 15px;
     height: 100%;
-    color:#fbfbfb;
-    background-color: #f34e4e;
-    font-family: 'Comic Neue', cursive;
-}
-
-.card:hover{
-    background-color: #0051ff;
-}
-
-.card img{
-    width: auto;
-    height: 250px;
+    color: $color-blanco;
+    background-color: $color-rojo;
+    font-family: $font-comic;
+    &:hover{
+        background-color: $color-azul;
+    }
+    img{
+        width: auto;
+        height: 250px;
+    }
 }

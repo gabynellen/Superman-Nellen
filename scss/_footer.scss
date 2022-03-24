@@ -1,7 +1,7 @@
 /* Inicio Footer */
 footer{
     height: 60px;
-    background-color: #3d61ff8a;
+    background-color: $color-azul;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -18,9 +18,9 @@ footer{
 
 .redes a{
     text-decoration: none;
-    color: antiquewhite;
+    color: $color-blanco;
     &:hover{
-        color:red;
+        color:$color-rojo;
     }
 }
 

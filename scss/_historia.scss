@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     p{
-        font-family: 'Comic Neue', cursive;
+        font-family: $font-comic;
+        color: $color-parrafos;
         width: 80%;
         padding: 10px;
         font-size: 20px;
-        background-color: #ffffffb0;
+        background-color: $color-fondo-texto;
         margin-bottom: 50px;
     }
 }

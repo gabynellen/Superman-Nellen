@@ -5,7 +5,7 @@
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
-    background-color: #3d61ff; 
+    background-color: $color-azul; 
     padding-left: 30px;
 }
 
@@ -16,7 +16,7 @@ h3{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 25px;
-    color:aliceblue;
+    color:$color-blanco;
 }
 input{
     width: 30px;
@@ -29,11 +29,11 @@ input{
 }
 
 .inputRecta{
-    background-color: #fbfbfb; 
+    background-color: $color-blanco; 
     width: 408px; 
     height: 40px; 
     border-radius: 5px;  
-    border: solid 2px #f34e4e; 
+    border: solid 2px $color-rojo; 
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 
@@ -44,7 +44,7 @@ input{
   padding: 0 5px;   
   margin-bottom: 20px; 
   margin-top: 10px; 
-  background-color: #f34e4e;  
+  background-color: $color-rojo;  
   border-style: solid; 
   border-radius: 10px;  
   width: 420px;   
@@ -55,18 +55,18 @@ label, span{
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 17px;
-    color: white;
+    color: $color-blanco;
 }
 
 textarea{
-    background-color: #fbfbfb; 
+    background-color: $color-blanco; 
     width: 405px; 
     height: 150px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;  
-    border: solid 2px #f34e4e; 
+    border: solid 2px $color-rojo; 
     margin-top: 10px;  
     padding-left: 10px;
     margin-bottom: 20px; 

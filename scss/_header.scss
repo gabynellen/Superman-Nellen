@@ -3,14 +3,20 @@
 /* Inicio Navbar */
 
 #offcanvasNavbar{
-    background-color: rgb(148, 155, 155);
-    color: antiquewhite;
+    background-color: #949b9b;
+    color: $color-blanco;
 }
-.navbar-light .navbar-nav .nav-link{
-    color: antiquewhite;
-    font-size: 20px;
-    &:hover{
-        color: #fa0a0a;
+.navbar-light  {
+
+    .navbar-nav{
+
+        .nav-link{
+            color: $color-blanco;
+            font-size: 20px;
+            &:hover{
+                color: $color-rojo;
+            }
+        }
     }
 }
 

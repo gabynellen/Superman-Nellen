@@ -12,7 +12,7 @@
     }
 
     .intro__leyend{
-        color: #ffffff;
+        color: $color-blanco;
     }
 
     .video{
@@ -20,15 +20,22 @@
     }
 
     .navbar-light .navbar-nav .nav-link{
-        color: antiquewhite;
-        font-size: 14px;
+        .navbar-nav{
+
+            .nav-link{
+                color: $color-blanco;
+                font-size: 14px;
+            }
+        }
+
     }
+    
     .d-block{
         height: 25vh;
     }
 
     .card{
-        background-color: #3d61ff;
+        background-color: $color-azul;
     }
 
     .imagenHistoria{

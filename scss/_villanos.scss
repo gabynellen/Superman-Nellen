@@ -1,10 +1,11 @@
 .villano{
-    background-color: #fbfbfbb7;
+    background-color: $color-fondo-texto;
     font-weight: bold;
-    font-family: 'Comic Neue', cursive;
+    font-family: $font-comic;
+    color: $color-parrafos;
     padding: 1rem;
     border-radius: 3px;
-    .villano__imagen
+    &__imagen
     {
         width: 150px;
         height: 150px;
