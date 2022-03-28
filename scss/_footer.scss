@@ -1,3 +1,10 @@
+$redes:(
+    instagram: #d75e4b,
+    twitter: #00aeff,
+    facebook: #1877f2,
+);
+
+
 /* Inicio Footer */
 footer{
     height: 60px;
@@ -15,13 +22,17 @@ footer{
     }
 }
 
-
-.redes a{
+a{
     text-decoration: none;
     color: $color-blanco;
-    &:hover{
-        color:$color-rojo;
+}
+@each $red,$color in $redes {
+    .#{$red}:hover{
+        color: $color;
     }
 }
+
+
+
 
 /* Fin Footer */

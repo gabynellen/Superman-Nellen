@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     p{
+        font-weight: 700;
         font-family: $font-comic;
         color: $color-parrafos;
         width: 80%;
@@ -9,7 +10,21 @@
         font-size: 20px;
         background-color: $color-fondo-texto;
         margin-bottom: 50px;
+        border-radius: 5px;
     }
+}
+
+.texto--osc{
+    @extend .texto;
+    p{
+        background-color: $color-parrafos;
+        color: $color-blanco;
+    }
+}
+.h3{
+    display: flex;
+    justify-content: center;
+    color: $color-blanco;
 }
 
 .imagenHistoria{

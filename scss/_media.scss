@@ -7,12 +7,7 @@
     }
 
     .intro__img{
-        width: inherit;
-        height: inherit;
-    }
-
-    .intro__leyend{
-        color: $color-blanco;
+        @include sizes(inherit,inherit);
     }
 
     .img-slide{

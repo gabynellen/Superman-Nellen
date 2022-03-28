@@ -1,13 +1,12 @@
 .villano{
     background-color: $color-fondo-texto;
-    font-weight: bold;
+    font-weight: map-get($estilosTextos , grosor);
     font-family: $font-comic;
     color: $color-parrafos;
     padding: 1rem;
     border-radius: 3px;
     &__imagen
     {
-        width: 150px;
-        height: 150px;
+        @include sizes(150px, 150px);
     }
 }

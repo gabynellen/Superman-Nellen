@@ -10,7 +10,13 @@
         background-color: $color-azul;
     }
     img{
-        width: auto;
-        height: 250px;
+        @include sizes(auto, 250px);
+    }
+    &--mod{
+        @extend .card;
+        background-color: $color-azul;
+        &:hover{
+            background-color: $color-rojo;
+        }
     }
 }
