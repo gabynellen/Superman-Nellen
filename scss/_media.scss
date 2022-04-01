@@ -40,16 +40,17 @@
     .contacto_formulario{
         width: auto;
         padding-right: 10px;
+        .inputRecta{
+            width: -webkit-fill-available;
+        }
+        .texto_mensaje{
+            width: -webkit-fill-available;
+        }
+        .button__contacto{
+            width: -webkit-fill-available;
+        }
     }
-    .inputRecta{
-        width: -webkit-fill-available;
-    }
-    .texto_mensaje{
-        width: -webkit-fill-available;
-    }
-    .button__contacto{
-        width: -webkit-fill-available;
-    }
+
 
     body{
         background-image: url("../assets/img/black-superman.jpg");
